@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Parisienne&family=Outfit:wght@300;400;600&display=swap');
+
+#root {
+  font-family: 'Outfit', sans-serif;
+}
+
+header {
+  text-align: center;
+  padding: 1rem;
+  h1 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-family: 'Parisienne', cursive;
+  }
+  ul {
+    list-style: none;
+    display: flex;
+    margin: 0 auto;
+    padding-left: 0;
+    justify-content: space-evenly;
+    align-items: center;
+    li {
+      a {
+        text-decoration: none;
+        color: red;
+      }
+    }
+  }
+}
+
+// .flowerHeader {
+//   position: absolute;
+//   z-index: -99;
+//   top: 30%;
+//   img {
+//     width: 100%;
+//   }
+// }

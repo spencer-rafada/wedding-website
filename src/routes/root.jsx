@@ -1,38 +1,21 @@
 import React from 'react';
-import { Outlet, Link } from 'react-router-dom';
+import { Outlet } from 'react-router-dom';
+import Navbar from '../components/Navbar';
+import 'normalize.css';
+import '../styles/styles.css';
+import FlowerHeader from '../assets/top-header-on-white.jpg';
 
 export default function Root() {
   return (
     <>
-      <nav>
-        <h1>Cheriemae Hana & Neil Spencer</h1>
-        <nav>
-          <ul>
-            <li>
-              <Link to={`/`}>Home</Link>
-            </li>
-            <li>
-              <Link to={`/temple`}>Temple</Link>
-            </li>
-            <li>
-              <Link to={`/reception`}>Reception</Link>
-            </li>
-            <li>
-              <Link to={`/schedule`}>Schedule</Link>
-            </li>
-            <li>
-              <Link to={`/photos`}>Photos</Link>
-            </li>
-            <li>
-              <Link to={`/registry`}>Registry</Link>
-            </li>
-            <li>
-              <Link to={`/RSVP`}>RSVP</Link>
-            </li>
-          </ul>
-        </nav>
-      </nav>
+      <Navbar />
+      {/* <div className='flowerHeader'>
+        <img src={FlowerHeader} alt={`Flower Header`}></img>
+      </div> */}
       <Outlet />
+      {/* <div className='flowerFooter'>
+        <img src={FlowerHeader} alt={`Flower Footer`}></img>
+      </div> */}
     </>
   );
 }
