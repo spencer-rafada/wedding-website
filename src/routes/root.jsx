@@ -1,6 +1,7 @@
 import React from 'react';
 import { Outlet } from 'react-router-dom';
 import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 import 'normalize.css';
 import '../styles/styles.css';
 import FlowerHeader from '../assets/top-header-on-white.jpg';
@@ -16,6 +17,7 @@ export default function Root() {
       {/* <div className='flowerFooter'>
         <img src={FlowerHeader} alt={`Flower Footer`}></img>
       </div> */}
+      <Footer />
     </>
   );
 }

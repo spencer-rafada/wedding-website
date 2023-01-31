@@ -34,6 +34,17 @@ header {
 //   z-index: -99;
 //   top: 30%;
 //   img {
-//     width: 100%;
+//     width: 150%;
 //   }
 // }
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  margin-top: 3rem;
+  background-color: red;
+  p {
+    font-family: 'Parisienne', cursive;
+    margin: 0;
+  }
+}
