@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Parisienne&family=Outfit:wght@300;400;600&display=swap');
+@import './variables';
 
 #root {
   font-family: 'Outfit', sans-serif;
+  color: black;
 }
 
 header {
@@ -21,10 +23,29 @@ header {
     justify-content: space-evenly;
     align-items: center;
     li {
+      padding: 0.19rem;
+      @media screen and (min-width: 769px) {
+        padding: 0.8rem;
+      }
+      transition: 0.2s transform;
       a {
         text-decoration: none;
-        color: red;
+        text-transform: uppercase;
+        font-weight: 400;
+        font-size: 0.5rem;
+        letter-spacing: 0.1rem;
+        @media screen and (min-width: 769px) {
+          font-size: 1rem;
+          letter-spacing: 0.2rem;
+        }
       }
+      a:visited {
+        color: black;
+      }
+    }
+    li:hover {
+      transform: scale(1.2);
+      border-bottom: solid 2px $peach;
     }
   }
 }
@@ -42,9 +63,12 @@ footer {
   text-align: center;
   padding: 2rem;
   margin-top: 3rem;
-  background-color: red;
+  background-color: $peach;
   p {
-    font-family: 'Parisienne', cursive;
     margin: 0;
+    .us {
+      letter-spacing: 0.1rem;
+      font-style: italic;
+    }
   }
 }

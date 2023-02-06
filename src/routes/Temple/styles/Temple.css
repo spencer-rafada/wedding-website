@@ -1,0 +1,24 @@
+.mainTemple {
+  text-align: center;
+}
+.mainTemple h1 {
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  font-size: 1.4rem;
+}
+@media screen and (min-width: 426px) {
+  .mainTemple h1 {
+    font-size: 1.8rem;
+  }
+}
+.mainTemple img {
+  width: 100%;
+  height: 30vh;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+@media screen and (min-width: 1024px) {
+  .mainTemple img {
+    height: 80vh;
+  }
+} /*# sourceMappingURL=Temple.css.map */

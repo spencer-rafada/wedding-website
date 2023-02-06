@@ -30,11 +30,12 @@ export default function Home() {
   return (
     <main>
       <div className="mainHeroImg">
+        <h1>We're getting married!!</h1>
         <img src={mainImg} alt={`Main Image`}></img>
       </div>
       <div className="mainCouple">
         <h1>Cheriemae Hana Ko</h1>
-        <p>and</p>
+        <p>&</p>
         <h1>Neil Spencer Rafada</h1>
       </div>
 

@@ -1,17 +1,37 @@
+.mainHeroImg {
+  position: relative;
+}
+.mainHeroImg h1 {
+  font-family: 'Parisienne', cursive;
+  position: absolute;
+  color: #ffd9bd;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 4rem;
+  cursor: default;
+  text-shadow: #ffd9bd 0 0 10px;
+}
 .mainHeroImg img {
   width: 100%;
   -o-object-fit: cover;
   object-fit: cover;
   height: 300px;
 }
+@media screen and (min-width: 1024px) {
+  .mainHeroImg img {
+    height: 100vh;
+  }
+}
 
 .mainCouple {
   text-align: center;
   margin-top: 3rem;
   margin-bottom: 3rem;
+  font-family: 'Parisienne', cursive;
 }
 .mainCouple h1 {
-  font-family: 'Dancing Script', cursive;
   font-weight: 700;
   font-size: 2.5rem;
   margin: 0;
@@ -23,6 +43,7 @@
 }
 .mainCouple p {
   margin: 0;
+  font-size: 2rem;
 }
 
 .mainCountdownTimer {

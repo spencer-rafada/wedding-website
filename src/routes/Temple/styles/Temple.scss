@@ -1,0 +1,22 @@
+@import '../../../styles/variables';
+
+.mainTemple {
+  text-align: center;
+  h1 {
+    // font-family: 'Parisienne', cursive;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    font-size: 1.4rem;
+    @media screen and (min-width: 426px) {
+      font-size: 1.8rem;
+    }
+  }
+  img {
+    width: 100%;
+    height: 30vh;
+    @media screen and (min-width: 1024px) {
+      height: 80vh;
+    }
+    object-fit: cover;
+  }
+}
