@@ -29,6 +29,7 @@ header {
       }
       transition: 0.2s transform;
       a {
+        color: black;
         text-decoration: none;
         text-transform: uppercase;
         font-weight: 400;
@@ -37,6 +38,9 @@ header {
         @media screen and (min-width: 769px) {
           font-size: 1rem;
           letter-spacing: 0.2rem;
+        }
+        .FAQs {
+          text-transform: none;
         }
       }
       a:visited {

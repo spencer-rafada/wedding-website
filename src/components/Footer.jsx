@@ -5,7 +5,7 @@ export default function Footer() {
     <footer>
       <p>Contact us at: hanaandspencer0721@gmail.com</p>
       <p>
-        &copy; 2023 by <span className='us'>KoRa</span>
+        &copy; 2023 by <span className="us">KoRa</span>
       </p>
     </footer>
   );

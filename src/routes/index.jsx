@@ -7,4 +7,5 @@ import Schedule from './Schedule/Schedule';
 import Photos from './Photos/Photos';
 import Registry from './Registry/Registry';
 import RSVP from './RSVP/RSVP';
-export { Home, Root, ErrorPage, Temple, Reception, Schedule, Photos, Registry, RSVP };
+import FAQ from './FAQs/FAQ';
+export { Home, Root, ErrorPage, Temple, Reception, Schedule, Photos, Registry, RSVP, FAQ };

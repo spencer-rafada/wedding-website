@@ -28,6 +28,11 @@ export default function Navbar() {
           <li>
             <Link to={`/RSVP`}>RSVP</Link>
           </li>
+          <li>
+            <Link to={`/FAQ`}>
+              FAQ<span className="FAQs">s</span>
+            </Link>
+          </li>
         </ul>
       </nav>
     </header>

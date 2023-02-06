@@ -10,7 +10,8 @@ import {
   Schedule,
   Photos,
   Registry,
-  RSVP
+  RSVP,
+  FAQ
 } from './routes/index';
 
 const router = createBrowserRouter([
@@ -46,6 +47,10 @@ const router = createBrowserRouter([
       {
         path: '/RSVP',
         element: <RSVP />
+      },
+      {
+        path: '/FAQ',
+        element: <FAQ />
       }
     ]
   }
