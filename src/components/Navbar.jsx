@@ -13,7 +13,7 @@ export default function Navbar() {
           <li>
             <Link to={`/temple`}>Temple</Link>
           </li>
-          <li>
+          {/* <li>
             <Link to={`/reception`}>Reception</Link>
           </li>
           <li>
@@ -21,7 +21,7 @@ export default function Navbar() {
           </li>
           <li>
             <Link to={`/photos`}>Photos</Link>
-          </li>
+          </li> */}
           <li>
             <Link to={`/registry`}>Registry</Link>
           </li>

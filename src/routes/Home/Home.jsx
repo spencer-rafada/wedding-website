@@ -40,7 +40,7 @@ export default function Home() {
       </div>
 
       <div className="mainCountdownTimer">
-        <p>#HanaandSpencer</p>
+        <p>#Hana&Spencer</p>
         <h2>July 21, 2023</h2>
         <p>Temple Sealing: Provo City Center Temple @ 9 am</p>
         <p>
@@ -56,20 +56,30 @@ export default function Home() {
 
       <div className="mainRSVPButton">
         <button>
-          <Link to={`/RSVP`}>RSVP</Link>
+          <Link to={`/RSVP`}>RSVP NOW</Link>
         </button>
       </div>
 
-      <div className="mainHowWeMet">
+      <div className="mainHowWeMet mainInfo">
         <h3>How We Met</h3>
-        <p>Hi</p>
+        <p>
+          Hana and Spencer met back in 2021 during the wedding of Hana's sister. It was after
+          Spencer's first semester back from his mission. He was invited by his friend before
+          mission, Brian, to his wedding.
+        </p>
       </div>
-      <div className="mainTheProposal">
+      <div className="mainTheProposal mainInfo">
         <h3>The Proposal</h3>
         <p>10.24.2022</p>
-        <p>Hello</p>
+        <p>
+          The proposal happened in Vermont, the place where Hana's family migrated to from the
+          Philippines. Hana's love from lanterns grew because of the movie Tangled. With the help of
+          Hana's sisters, Spencer planned how the night will be. I asked her the question as soon as
+          the lantern went up. Kneeling down felt forever, but hearing her say "Yes" made it all
+          worth it.
+        </p>
       </div>
-      <div className="mainMessage">
+      <div className="mainMessage mainInfo">
         <p>We're so excited to celebrate this next chaper in our lives with you</p>
         <p>See you soon!</p>
       </div>

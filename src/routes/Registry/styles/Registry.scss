@@ -1,0 +1,19 @@
+.rsvpContainer {
+  background-color: red;
+  padding: 2rem;
+  text-align: center;
+  height: 80vh;
+  h1 {
+    font-size: 2.5rem;
+    @media screen and (min-width: 700px) {
+      font-size: 4rem;
+    }
+  }
+  p {
+    font-size: 1.3rem;
+  }
+  .shop {
+    padding: 2rem;
+    box-shadow: 0 0 5px 3px black;
+  }
+}

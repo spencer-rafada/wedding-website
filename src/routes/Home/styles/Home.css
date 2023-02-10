@@ -12,12 +12,23 @@
   font-size: 4rem;
   cursor: default;
   text-shadow: #ffd9bd 0 0 10px;
+  font-size: 1.8rem;
+}
+@media screen and (min-width: 426px) {
+  .mainHeroImg h1 {
+    font-size: 2.8rem;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .mainHeroImg h1 {
+    font-size: 3.5rem;
+  }
 }
 .mainHeroImg img {
   width: 100%;
   -o-object-fit: cover;
   object-fit: cover;
-  height: 300px;
+  height: 40vh;
 }
 @media screen and (min-width: 1024px) {
   .mainHeroImg img {
@@ -41,6 +52,11 @@
     font-size: 3rem;
   }
 }
+@media screen and (min-width: 1000px) {
+  .mainCouple h1 {
+    font-size: 4rem;
+  }
+}
 .mainCouple p {
   margin: 0;
   font-size: 2rem;
@@ -49,6 +65,7 @@
 .mainCountdownTimer {
   text-align: center;
   margin-bottom: 3rem;
+  padding: 1rem;
 }
 .mainCountdownTimer h2 {
   font-size: 2rem;
@@ -58,9 +75,24 @@
     font-size: 3rem;
   }
 }
+@media screen and (min-width: 1000px) {
+  .mainCountdownTimer h2 {
+    font-size: 3.8rem;
+  }
+}
+@media screen and (min-width: 700px) {
+  .mainCountdownTimer p {
+    font-size: 1.5rem;
+  }
+}
 .mainCountdownTimer p:nth-child(1) {
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   margin: 0;
+}
+@media screen and (min-width: 1000px) {
+  .mainCountdownTimer p:nth-child(1) {
+    font-size: 1.8rem;
+  }
 }
 .mainCountdownTimer .mainTimer {
   display: flex;
@@ -71,9 +103,16 @@
   .mainCountdownTimer .mainTimer {
     justify-content: center;
   }
+}
+@media screen and (min-width: 426px) {
   .mainCountdownTimer .mainTimer span {
     padding-left: 1rem;
     padding-right: 1rem;
+  }
+}
+@media screen and (min-width: 700px) {
+  .mainCountdownTimer .mainTimer span {
+    font-size: 1.5rem;
   }
 }
 
@@ -84,24 +123,45 @@
 .mainRSVPButton button {
   border: 0;
   padding: 1rem;
+  background-color: #ffd9bd;
+  transition: 0.3s transform;
+}
+@media screen and (min-width: 700px) {
+  .mainRSVPButton button {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .mainRSVPButton button {
+    font-size: 1.8rem;
+  }
 }
 .mainRSVPButton button a {
   text-decoration: none;
+  color: black;
+}
+.mainRSVPButton button:hover {
+  transform: scale(1.2);
 }
 
-.mainHowWeMet {
+.mainInfo {
   text-align: center;
   margin-bottom: 3rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
-
-.mainTheProposal {
-  text-align: center;
-  margin-bottom: 3rem;
+.mainInfo h3 {
+  font-size: 1.5rem;
 }
-
-.mainMessage {
-  text-align: center;
-  margin-bottom: 3rem;
+@media screen and (min-width: 700px) {
+  .mainInfo h3 {
+    font-size: 1.8rem;
+  }
+}
+@media screen and (min-width: 700px) {
+  .mainInfo p {
+    font-size: 1.4rem;
+  }
 }
 
 .mainSecondImg {
