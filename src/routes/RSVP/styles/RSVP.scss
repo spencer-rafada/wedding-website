@@ -5,6 +5,31 @@
   margin-bottom: 3rem;
   text-align: center;
   padding: 1rem;
+  .rsvpHeader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 3rem;
+    @media screen and (min-width: 700px) {
+      flex-direction: row;
+    }
+    .icon {
+      fill: $peach;
+      font-size: 5rem;
+      @media screen and (min-width: 700px) {
+        font-size: 6rem;
+        padding-right: 1.5rem;
+      }
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin: 0;
+      @media screen and (min-width: 700px) {
+        font-size: 4rem;
+      }
+    }
+  }
   iframe {
     width: 100%;
     height: 50vh;

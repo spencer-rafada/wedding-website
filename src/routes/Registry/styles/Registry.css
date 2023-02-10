@@ -5,11 +5,34 @@
   text-align: center;
   height: 80vh;
 }
-.rsvpContainer h1 {
+.rsvpContainer .rsvpHeader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 3rem;
+}
+@media screen and (min-width: 700px) {
+  .rsvpContainer .rsvpHeader {
+    flex-direction: row;
+  }
+}
+.rsvpContainer .rsvpHeader .icon {
+  fill: #ffd9bd;
   font-size: 2.5rem;
 }
 @media screen and (min-width: 700px) {
-  .rsvpContainer h1 {
+  .rsvpContainer .rsvpHeader .icon {
+    font-size: 4rem;
+    padding-right: 1.5rem;
+  }
+}
+.rsvpContainer .rsvpHeader h1 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+@media screen and (min-width: 700px) {
+  .rsvpContainer .rsvpHeader h1 {
     font-size: 4rem;
   }
 }

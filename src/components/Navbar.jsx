@@ -10,29 +10,37 @@ export default function Navbar({ toast }) {
         <h1>Cheriemae Hana & Neil Spencer</h1>
         <nav>
           <ul>
-            <li onClick={() => toast('home')}>
-              <Link to={`/`}>Home</Link>
+            <li>
+              <Link to={`/`} onClick={() => toast('home')}>
+                Home
+              </Link>
             </li>
-            <li onClick={() => toast('temple')}>
-              <Link to={`/temple`}>Temple</Link>
+            <li>
+              <Link to={`/temple`} onClick={() => toast('temple')}>
+                Temple
+              </Link>
             </li>
-            {/* <li onClick={()=>toast("hi")}>
-            <Link to={`/reception`}>Reception</Link>
+            {/* <li>
+            <Link to={`/reception`} onClick={()=>toast("hi")}>Reception</Link>
             </li>
-            <li onClick={()=>toast("hi")}>
-            <Link to={`/schedule`}>Schedule</Link>
+            <li>
+            <Link to={`/schedule`} onClick={()=>toast("hi")}>Schedule</Link>
             </li>
-            <li onClick={()=>toast("hi")}>
-            <Link to={`/photos`}>Photos</Link>
+            <li>
+            <Link to={`/photos`} onClick={()=>toast("hi")}>Photos</Link>
           </li> */}
-            <li onClick={() => toast('registry')}>
-              <Link to={`/registry`}>Registry</Link>
+            <li>
+              <Link to={`/registry`} onClick={() => toast('registry')}>
+                Registry
+              </Link>
             </li>
-            <li onClick={() => toast('rsvp')}>
-              <Link to={`/RSVP`}>RSVP</Link>
+            <li>
+              <Link to={`/RSVP`} onClick={() => toast('rsvp')}>
+                RSVP
+              </Link>
             </li>
-            {/* <li onClick={()=>toast("hi")}>
-            <Link to={`/FAQ`}>
+            {/* <li>
+            <Link to={`/FAQ`} onClick={()=>toast("hi")}>
             FAQ<span className="FAQs">s</span>
             </Link>
           </li> */}
