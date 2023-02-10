@@ -1,5 +1,6 @@
 .rsvpContainer {
-  background-color: red;
+  display: flex;
+  flex-direction: column;
   padding: 2rem;
   text-align: center;
   height: 80vh;
@@ -10,10 +11,20 @@
     }
   }
   p {
-    font-size: 1.3rem;
+    @media screen and (min-width: 700px) {
+      font-size: 1.4rem;
+    }
   }
   .shop {
-    padding: 2rem;
-    box-shadow: 0 0 5px 3px black;
+    justify-content: center;
+    align-items: center;
+    img {
+      padding: 2rem;
+      box-shadow: 0 0 5px 3px black;
+      transition: 0.3s transform;
+    }
+    img:hover {
+      transform: scale(1.1);
+    }
   }
 }
