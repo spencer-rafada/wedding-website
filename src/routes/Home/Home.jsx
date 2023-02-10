@@ -28,7 +28,7 @@ export default function Home() {
   });
 
   return (
-    <main>
+    <>
       <div className="mainHeroImg">
         <h1>We're getting married!!</h1>
         <img src={mainImg} alt={`Main Image`}></img>
@@ -87,6 +87,6 @@ export default function Home() {
       <div className="mainSecondImg">
         <img src={mainSecondImg} alt={`Hana and I`}></img>
       </div>
-    </main>
+    </>
   );
 }

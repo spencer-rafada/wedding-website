@@ -1,13 +1,33 @@
+@import '../../../styles/variables';
 .rsvpContainer {
   display: flex;
   flex-direction: column;
   padding: 2rem;
   text-align: center;
   height: 80vh;
-  h1 {
-    font-size: 2.5rem;
+  .rsvpHeader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 3rem;
     @media screen and (min-width: 700px) {
-      font-size: 4rem;
+      flex-direction: row;
+    }
+    .icon {
+      fill: $peach;
+      font-size: 2.5rem;
+      @media screen and (min-width: 700px) {
+        font-size: 4rem;
+        padding-right: 1.5rem;
+      }
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin: 0;
+      @media screen and (min-width: 700px) {
+        font-size: 4rem;
+      }
     }
   }
   p {

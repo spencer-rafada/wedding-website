@@ -1,11 +1,15 @@
 import React from 'react';
 import './styles/RSVP.css';
+import { MdRsvp } from 'react-icons/md';
 
 export default function RSVP() {
   return (
-    <main>
+    <>
       <div className="rsvpIframe">
-        <h1>Help us plan for our wedding via RSVP!</h1>
+        <div className="rsvpHeader">
+          <MdRsvp className="icon" />
+          <h1>Help us plan for our wedding via RSVP!</h1>
+        </div>
         <p>
           This RSVP will help us determine the people who will come and be sending invites to.
           Invitations will be sent out soon!
@@ -19,6 +23,6 @@ export default function RSVP() {
           <a href={'https://ineedyouraddress.com/hanaandspencer'}>Click Me!</a>
         </button>
       </div>
-    </main>
+    </>
   );
 }

@@ -53,8 +53,9 @@ export default function Root() {
         toastOptions={{ className: 'toast', duration: 5000, icon: `❤️` }}
       />
       <Navbar toast={notify} />
-
-      <Outlet />
+      <main>
+        <Outlet />
+      </main>
 
       <Footer />
     </>
