@@ -72,8 +72,7 @@ export default function Home() {
         <h3>The Proposal</h3>
         <p>10.24.2022</p>
         <p>
-          The proposal happened in Vermont, the place where Hana's family migrated to from the
-          Philippines. Hana's love from lanterns grew because of the movie Tangled. With the help of
+          Hana's love from lanterns grew because of the movie Tangled. With the help of
           Hana's sisters, Spencer planned how the night will be. I asked her the question as soon as
           the lantern went up. Kneeling down felt forever, but hearing her say "Yes" made it all
           worth it.
@@ -84,9 +83,9 @@ export default function Home() {
         <p>See you soon!</p>
       </div>
 
-      <div className="mainSecondImg">
+      {/* <div className="mainSecondImg">
         <img src={mainSecondImg} alt={`Hana and I`}></img>
-      </div>
+      </div> */}
     </>
   );
 }
