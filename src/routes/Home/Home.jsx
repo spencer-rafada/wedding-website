@@ -68,7 +68,7 @@ export default function Home() {
           mission, Brian, to his wedding.
         </p>
       </div>
-      <div className="mainTheProposal mainInfo">
+      {/* <div className="mainTheProposal mainInfo">
         <h3>The Proposal</h3>
         <p>10.24.2022</p>
         <p>
@@ -77,7 +77,7 @@ export default function Home() {
           the lantern went up. Kneeling down felt forever, but hearing her say "Yes" made it all
           worth it.
         </p>
-      </div>
+      </div> */}
       <div className="mainMessage mainInfo">
         <p>We're so excited to celebrate this next chaper in our lives with you</p>
         <p>See you soon!</p>
