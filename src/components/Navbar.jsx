@@ -39,11 +39,11 @@ export default function Navbar({ toast }) {
                 RSVP
               </Link>
             </li>
-            {/* <li>
-            <Link to={`/FAQ`} onClick={()=>toast("hi")}>
-            FAQ<span className="FAQs">s</span>
-            </Link>
-          </li> */}
+            <li>
+              <Link to={`/FAQ`} onClick={() => toast('faq')}>
+                FAQ<span className="FAQs">s</span>
+              </Link>
+            </li>
           </ul>
         </nav>
       </header>

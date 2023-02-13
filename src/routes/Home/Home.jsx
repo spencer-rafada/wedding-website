@@ -68,25 +68,24 @@ export default function Home() {
           mission, Brian, to his wedding.
         </p>
       </div>
-      <div className="mainTheProposal mainInfo">
+      {/* <div className="mainTheProposal mainInfo">
         <h3>The Proposal</h3>
         <p>10.24.2022</p>
         <p>
-          The proposal happened in Vermont, the place where Hana's family migrated to from the
-          Philippines. Hana's love from lanterns grew because of the movie Tangled. With the help of
+          Hana's love from lanterns grew because of the movie Tangled. With the help of
           Hana's sisters, Spencer planned how the night will be. I asked her the question as soon as
           the lantern went up. Kneeling down felt forever, but hearing her say "Yes" made it all
           worth it.
         </p>
-      </div>
+      </div> */}
       <div className="mainMessage mainInfo">
         <p>We're so excited to celebrate this next chaper in our lives with you</p>
         <p>See you soon!</p>
       </div>
 
-      <div className="mainSecondImg">
+      {/* <div className="mainSecondImg">
         <img src={mainSecondImg} alt={`Hana and I`}></img>
-      </div>
+      </div> */}
     </>
   );
 }

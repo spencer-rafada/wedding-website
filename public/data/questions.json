@@ -1,7 +1,7 @@
 [
   {
     "question": "When can I know the reception?",
-    "answer": "We will keep in touch with you through email and our Facebook Group for updates!"
+    "answer": "We will keep in touch with you through email and our Facebook Group for updates! We ask of you to fill in the RSVP and INeedYourAddress form in the RSVP page."
   },
   {
     "question": "Where is the reception?",
@@ -14,5 +14,9 @@
   {
     "question": "Why are you only registered on Zola?",
     "answer": "We found this platform through Hana's sister and it connects all of the shops such as Amazon, Target, etc. to avoid repeated orders."
+  },
+  {
+    "question": "This is a test",
+    "answer": ""
   }
 ]
