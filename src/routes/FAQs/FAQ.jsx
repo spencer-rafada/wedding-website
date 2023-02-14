@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { FaQuestion } from 'react-icons/fa';
-import QuestionCard from './components/QuestionCard.js';
+import QuestionCard from './components/QuestionCard.jsx';
 import './styles/FAQ.css';
 
 export default function FAQ() {
