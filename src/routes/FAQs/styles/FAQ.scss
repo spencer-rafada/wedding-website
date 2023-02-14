@@ -1,0 +1,83 @@
+@import '../../../styles/variables';
+
+.faqContainer {
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  .faqHeader {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 3rem;
+    @media screen and (min-width: 700px) {
+      flex-direction: row;
+    }
+    .icon {
+      fill: $peach;
+      font-size: 2rem;
+      @media screen and (min-width: 700px) {
+        font-size: 3.5rem;
+        padding-right: 1.5rem;
+      }
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin: 0;
+      @media screen and (min-width: 700px) {
+        font-size: 4rem;
+      }
+    }
+  }
+
+  .faqSubmitQuestion {
+    margin-bottom: 3rem;
+    text-align: center;
+    transition: 0.2s transform;
+    a {
+      background-color: $peach;
+      border-radius: 2rem;
+      margin: 0 auto;
+      padding: 1rem;
+      font-size: 1.5rem;
+      text-decoration: none;
+      color: black;
+    }
+    a:active {
+      text-decoration: none;
+      color: black;
+    }
+  }
+
+  .faqSubmitQuestion:hover {
+    transform: scale(1.1);
+    a {
+      background-color: $lavender;
+    }
+  }
+
+  .faqGrid {
+    display: block;
+    width: 100%;
+    
+    @media screen and (min-width: 500px) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 1rem;
+      row-gap: 1rem;
+      width: 80%;
+      margin: 0 auto;
+    }
+    
+    .faqQuestionCard {
+      padding: 1rem;
+      border-radius: 1rem;
+      box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.397);
+      margin-bottom: 1rem;
+      @media screen and (min-width: 500px) {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

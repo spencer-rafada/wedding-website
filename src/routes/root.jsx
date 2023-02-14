@@ -16,7 +16,8 @@ const messages = {
   temple:
     'We only have 50 spots! If you want to witness the sealing inside, let us know! Feel free to wait for the temple exit!',
   registry: 'We appreciate you all for the gifts!',
-  rsvp: 'Help us plan for our wedding by filling out the RSVP and INeedYourAddress!'
+  rsvp: 'Help us plan for our wedding by filling out the RSVP and INeedYourAddress!',
+  faq: 'Here is a list of Frequently Asked Questions. You can submit your own question and we will respond with an answer!'
 };
 
 export default function Root() {
@@ -42,6 +43,8 @@ export default function Root() {
       message = messages.registry;
     } else if (category === 'rsvp') {
       message = messages.rsvp;
+    } else if (category === 'faq') {
+      message = messages.faq;
     }
     toast.remove();
     toast(message);

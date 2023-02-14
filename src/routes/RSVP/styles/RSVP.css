@@ -17,7 +17,7 @@
   }
 }
 .rsvpIframe .rsvpHeader .icon {
-  fill: #ffd9bd;
+  fill: #FFD9BD;
   font-size: 5rem;
 }
 @media screen and (min-width: 700px) {
@@ -47,8 +47,10 @@
   text-align: center;
 }
 .inyaContainer button {
-  background-color: #ffd9bd;
+  border: 0;
   padding: 1rem;
+  background-color: #FFD9BD;
+  border-radius: 2rem;
   transition: 0.3s transform;
 }
 .inyaContainer button a {
@@ -58,7 +60,6 @@
 .inyaContainer button:hover {
   transform: scale(1.1);
 }
-.inyaContainer button,
-.inyaContainer p {
+.inyaContainer button, .inyaContainer p {
   font-size: 1.5rem;
-} /*# sourceMappingURL=RSVP.css.map */
+}/*# sourceMappingURL=RSVP.css.map */
