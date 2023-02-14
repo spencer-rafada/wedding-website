@@ -16,14 +16,20 @@ export default function RSVP() {
             This RSVP will help us determine the people who will come and be sending invites to.
             Invitations will be sent out soon!
           </p>
-          <iframe src={`https://cheriemaeandspencer.rsvpify.com`}></iframe>
+          <button>
+            <a href={`https://cheriemaeandspencer.rsvpify.com`} target={`_blank`}>
+              Click Me!
+            </a>
+          </button>
         </div>
       </div>
       <div className="inyaContainer">
         <h1>Step 2: We need your Address!</h1>
         <p>We will need your address as we send out our invitations!</p>
         <button>
-          <a href={'https://ineedyouraddress.com/hanaandspencer'}>Click Me!</a>
+          <a href={'https://ineedyouraddress.com/hanaandspencer'} target={`_blank`}>
+            Click Me!
+          </a>
         </button>
       </div>
     </>
