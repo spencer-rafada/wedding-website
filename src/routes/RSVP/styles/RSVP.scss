@@ -42,8 +42,10 @@
 .inyaContainer {
   text-align: center;
   button {
-    background-color: $peach;
+    border: 0;
     padding: 1rem;
+    background-color: $peach;
+    border-radius: 2rem;
     transition: 0.3s transform;
     a {
       color: black;

@@ -47,8 +47,10 @@
   text-align: center;
 }
 .inyaContainer button {
-  background-color: #FFD9BD;
+  border: 0;
   padding: 1rem;
+  background-color: #FFD9BD;
+  border-radius: 2rem;
   transition: 0.3s transform;
 }
 .inyaContainer button a {
