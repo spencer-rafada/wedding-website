@@ -17,7 +17,7 @@
   }
 }
 .rsvpIframe .rsvpHeader .icon {
-  fill: #ffd9bd;
+  fill: #FFD9BD;
   font-size: 5rem;
 }
 @media screen and (min-width: 700px) {
@@ -47,7 +47,7 @@
   text-align: center;
 }
 .inyaContainer button {
-  background-color: #ffd9bd;
+  background-color: #FFD9BD;
   padding: 1rem;
   transition: 0.3s transform;
 }
@@ -58,7 +58,6 @@
 .inyaContainer button:hover {
   transform: scale(1.1);
 }
-.inyaContainer button,
-.inyaContainer p {
+.inyaContainer button, .inyaContainer p {
   font-size: 1.5rem;
-} /*# sourceMappingURL=RSVP.css.map */
+}/*# sourceMappingURL=RSVP.css.map */
