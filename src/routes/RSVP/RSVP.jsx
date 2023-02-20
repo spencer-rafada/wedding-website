@@ -1,6 +1,7 @@
 import React from 'react';
 import './styles/RSVP.css';
 import { MdRsvp } from 'react-icons/md';
+import RSVPForm from './components/RSVPForm';
 
 export default function RSVP() {
   return (
@@ -32,6 +33,7 @@ export default function RSVP() {
           </a>
         </button>
       </div>
+      <RSVPForm />
     </>
   );
 }
