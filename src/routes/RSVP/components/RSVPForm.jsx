@@ -36,9 +36,29 @@ export default function RSVPForm() {
     };
   };
 
+  // People Handler
+  const handlePersonChange = (index, field, event) => {
+    let data = [...people];
+    if (field === 'person') data[index][field] = event.target.value;
+    else data[index][field] = !data[index][field];
+    setPeople(data);
+  };
+
+  const addPerson = () => {
+    let newfield = { person: '', rsvp: false };
+    setPeople([...people, newfield]);
+  };
+
+  const removePerson = (index) => {
+    let data = [...people];
+    data.splice(index, 1);
+    setPeople(data);
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(values);
+    let submitData = { ...values, people };
+    console.log(submitData);
   };
 
   return (
@@ -47,127 +67,166 @@ export default function RSVPForm() {
         <form id="rsvp-form">
           <fieldset>
             <legend>RSVP for our wedding now!</legend>
-            <label>
-              First Name:
-              <input
-                type="text"
-                placeholder="Enter your first name"
-                name="firstName"
-                value={values.firstName}
-                onChange={handleChange('firstName')}
-                required
-              ></input>
-            </label>
-            <label>
-              Last Name:
-              <input
-                type="text"
-                placeholder="Enter your last name"
-                name="lastName"
-                value={values.lastName}
-                onChange={handleChange('lastName')}
-                required
-              ></input>
-            </label>
-            <label>
-              RSVP:
-              <input
-                type="checkbox"
-                checked={values.rsvp}
-                name="rsvp"
-                onChange={handleChange('rsvp')}
-              ></input>
-            </label>
-            <label>
-              Address:
-              <input
-                type={`text`}
-                placeholder="Enter your address"
-                name="address"
-                value={values.address}
-                onChange={handleChange('address')}
-                required
-              ></input>
-            </label>
-            <label>
-              City:
-              <input
-                type={`text`}
-                placeholder="Enter your city"
-                name="city"
-                value={values.city}
-                onChange={handleChange('city')}
-                required
-              ></input>
-            </label>
-            <label>
-              State:
-              <input
-                type={`text`}
-                placeholder="Enter your state"
-                name="state"
-                value={values.state}
-                onChange={handleChange('state')}
-                required
-              ></input>
-            </label>
-            <label>
-              Zip:
-              <input
-                type={`text`}
-                placeholder="Enter your zip"
-                name="zip"
-                value={values.zip}
-                onChange={handleChange('zip')}
-                required
-              ></input>
-            </label>
-            <label>
-              Country:
-              <input
-                type={`text`}
-                placeholder="Enter your country"
-                name="country"
-                value={values.country}
-                onChange={handleChange('country')}
-                required
-              ></input>
-            </label>
-            <label>
-              Phone:
-              <input
-                type={`text`}
-                placeholder="Enter your phone"
-                name="phone"
-                value={values.phone}
-                onChange={handleChange('phone')}
-              ></input>
-            </label>
-            <label>
-              Email:
-              <input
-                type={`text`}
-                placeholder="Enter your email"
-                name="email"
-                value={values.email}
-                onChange={handleChange('email')}
-              ></input>
-            </label>
-            <div>
-              
+            <div className="form-section">
+              <label>
+                First Name:
+                <input
+                  type="text"
+                  placeholder="Enter your first name"
+                  name="firstName"
+                  value={values.firstName}
+                  onChange={handleChange('firstName')}
+                  required
+                ></input>
+              </label>
+              <label>
+                Last Name:
+                <input
+                  type="text"
+                  placeholder="Enter your last name"
+                  name="lastName"
+                  value={values.lastName}
+                  onChange={handleChange('lastName')}
+                  required
+                ></input>
+              </label>
+              <label>
+                RSVP:
+                <input
+                  type="checkbox"
+                  checked={values.rsvp}
+                  name="rsvp"
+                  onChange={handleChange('rsvp')}
+                ></input>
+              </label>
+              <label>
+                Phone:
+                <input
+                  type={`text`}
+                  placeholder="Enter your phone"
+                  name="phone"
+                  value={values.phone}
+                  onChange={handleChange('phone')}
+                ></input>
+              </label>
+              <label>
+                Email:
+                <input
+                  type={`text`}
+                  placeholder="Enter your email"
+                  name="email"
+                  value={values.email}
+                  onChange={handleChange('email')}
+                ></input>
+              </label>
             </div>
-            <label>
-              Enter note:
-              <textarea
-                name="note"
-                rows={4}
-                cols={50}
-                placeholder="We're looking forward to meet be with you for our special day."
-                form="rsvp-form"
-                value={values.note}
-                onChange={handleChange('note')}
-              ></textarea>
-            </label>
+            <div className="form-section">
+              <label>
+                Address:
+                <input
+                  type={`text`}
+                  placeholder="Enter your address"
+                  name="address"
+                  value={values.address}
+                  onChange={handleChange('address')}
+                  required
+                ></input>
+              </label>
+              <label>
+                City:
+                <input
+                  type={`text`}
+                  placeholder="Enter your city"
+                  name="city"
+                  value={values.city}
+                  onChange={handleChange('city')}
+                  required
+                ></input>
+              </label>
+              <label>
+                State:
+                <input
+                  type={`text`}
+                  placeholder="Enter your state"
+                  name="state"
+                  value={values.state}
+                  onChange={handleChange('state')}
+                  required
+                ></input>
+              </label>
+              <label>
+                Zip:
+                <input
+                  type={`text`}
+                  placeholder="Enter your zip"
+                  name="zip"
+                  value={values.zip}
+                  onChange={handleChange('zip')}
+                  required
+                ></input>
+              </label>
+              <label>
+                Country:
+                <input
+                  type={`text`}
+                  placeholder="Enter your country"
+                  name="country"
+                  value={values.country}
+                  onChange={handleChange('country')}
+                  required
+                ></input>
+              </label>
+            </div>
+            <div className="form-section">
+              <label>
+                Add People (Check if sure. Uncheck if not sure.):
+                <button type="button" onClick={addPerson}>
+                  +
+                </button>
+              </label>
+              {people.map((item, index) => {
+                return (
+                  <div className='form-dynamic' key={index}>
+                    <label>
+                      Name:
+                      <input
+                        name="people"
+                        type="text"
+                        placeholder="Enter people"
+                        value={item.person}
+                        onChange={(event) => handlePersonChange(index, event)}
+                      ></input>
+                    </label>
+                    <label>
+                      RSVP:
+                      <input
+                        name="rsvp-dynamic"
+                        type={`checkbox`}
+                        value={item.rsvp}
+                        onChange={(event) => handlePersonChange(index, 'rsvp', event)}
+                      ></input>
+                    </label>
+                    <button type="button" onClick={() => removePerson(index)}>
+                      X
+                    </button>
+                  </div>
+                );
+              })}
+            </div>
+            <div className="form-section">
+              <label>
+                Enter note:
+                <textarea
+                  name="note"
+                  rows={4}
+                  cols={50}
+                  placeholder="We're looking forward to meet be with you for our special day."
+                  form="rsvp-form"
+                  value={values.note}
+                  onChange={handleChange('note')}
+                ></textarea>
+              </label>
+            </div>
             <button type="submit" onClick={handleSubmit}>
               Submit
             </button>

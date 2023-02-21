@@ -59,3 +59,35 @@
     font-size: 1.5rem;
   }
 }
+
+.form {
+  width: 80%;
+  margin: 0 auto;
+  fieldset {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    legend {
+      background-color: $peach;
+      font-size: 1.2rem;
+      padding: 0.5rem;
+      border-radius: 0.5rem;
+    }
+    .form-section {
+      width: 80%;
+      margin: 0 auto;
+      label {
+        input[type=text] {
+          width: 100%;
+          padding: 0.25rem;
+        }
+      }
+      .form-dynamic {
+        input[type=text] {
+          width: 25%;
+        }
+      }
+    }
+  }
+}
