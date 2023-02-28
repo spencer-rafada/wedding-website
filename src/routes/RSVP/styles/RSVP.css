@@ -1,10 +1,4 @@
-.rsvpIframe {
-  margin-top: 3rem;
-  margin-bottom: 3rem;
-  text-align: center;
-  padding: 1rem;
-}
-.rsvpIframe .rsvpHeader {
+.rsvpHeader {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -12,82 +6,126 @@
   margin-bottom: 3rem;
 }
 @media screen and (min-width: 700px) {
-  .rsvpIframe .rsvpHeader {
+  .rsvpHeader {
     flex-direction: row;
   }
 }
-.rsvpIframe .rsvpHeader .icon {
+.rsvpHeader .icon {
   fill: #FFD9BD;
   font-size: 5rem;
 }
 @media screen and (min-width: 700px) {
-  .rsvpIframe .rsvpHeader .icon {
+  .rsvpHeader .icon {
     font-size: 6rem;
     padding-right: 1.5rem;
   }
 }
-.rsvpIframe .rsvpHeader h1 {
+.rsvpHeader h1 {
   font-size: 2.5rem;
   margin: 0;
 }
 @media screen and (min-width: 700px) {
-  .rsvpIframe .rsvpHeader h1 {
+  .rsvpHeader h1 {
     font-size: 4rem;
   }
 }
-.rsvpIframe iframe {
-  width: 100%;
-  height: 50vh;
-}
-.rsvpIframe p {
-  font-size: 1.5rem;
-}
 
-.inyaContainer {
-  text-align: center;
-}
-.inyaContainer button {
-  border: 0;
-  padding: 1rem;
-  background-color: #FFD9BD;
-  border-radius: 2rem;
-  transition: 0.3s transform;
-}
-.inyaContainer button a {
-  color: black;
-  text-decoration: none;
-}
-.inyaContainer button:hover {
-  transform: scale(1.1);
-}
-.inyaContainer button, .inyaContainer p {
-  font-size: 1.5rem;
-}
-
-.form {
-  width: 80%;
-  margin: 0 auto;
-}
-.form fieldset {
+#rsvp-form {
+  margin: 1rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
-.form fieldset legend {
+@media screen and (min-width: 700px) {
+  #rsvp-form {
+    margin: 2rem;
+  }
+}
+#rsvp-form fieldset {
+  border-radius: 1rem;
+  border: 2px solid #FFD9BD;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+#rsvp-form fieldset button {
   background-color: #FFD9BD;
-  font-size: 1.2rem;
+  border: 0;
+  margin: 0 auto;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 1rem;
+}
+@media screen and (min-width: 700px) {
+  #rsvp-form fieldset {
+    width: 65%;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+  }
+}
+#rsvp-form legend {
+  background-color: #FFD9BD;
+  padding: 0.5rem;
+  border-radius: 0.4rem;
+}
+#rsvp-form .top {
+  display: block;
+  margin: 1rem 0;
+}
+#rsvp-form .top input[type=text], #rsvp-form .top select, #rsvp-form .top textarea {
+  display: block;
+  width: 80%;
+  padding: 0.5rem;
+  background-color: rgba(0, 0, 0, 0.1);
+  color: black;
+  border: solid 1px #999;
+}
+@media screen and (min-width: 700px) {
+  #rsvp-form .top input[type=text], #rsvp-form .top select, #rsvp-form .top textarea {
+    width: 75%;
+  }
+}
+#rsvp-form .top textarea {
+  width: 90%;
+}
+#rsvp-form .form-dynamic {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border: 1px solid #FFD9BD;
   padding: 0.5rem;
   border-radius: 0.5rem;
+  margin-bottom: 0.5rem;
 }
-.form fieldset .form-section {
+@media screen and (min-width: 700px) {
+  #rsvp-form .form-dynamic {
+    width: 65%;
+  }
+}
+#rsvp-form .form-dynamic label input, #rsvp-form .form-dynamic label select {
+  padding: 0.4rem;
+  background-color: rgba(0, 0, 0, 0.1);
+  color: black;
+  border: solid 1px #999;
   width: 80%;
+}
+#rsvp-form .form-dynamic button {
+  border: 0;
+  background-color: white;
+  cursor: pointer;
+  color: red;
+  display: flex;
+  align-items: center;
+}
+#rsvp-form button[type=submit] {
+  padding: 1rem;
   margin: 0 auto;
+  width: 50%;
+  border: 0;
+  border-radius: 2rem;
+  background-color: #FFD9BD;
+  cursor: pointer;
+  font-size: 1.2rem;
 }
-.form fieldset .form-section label input[type=text] {
-  width: 100%;
-  padding: 0.25rem;
-}
-.form fieldset .form-section .form-dynamic input[type=text] {
-  width: 25%;
+#rsvp-form button[type=submit]:hover {
+  background-color: #E6E6FA;
 }/*# sourceMappingURL=RSVP.css.map */
