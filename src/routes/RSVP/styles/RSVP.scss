@@ -122,3 +122,22 @@
     background-color: $lavender;
   }
 }
+
+// Success Component
+.rsvpSuccessContainer {
+  padding: 1rem;
+  border: 2px solid $peach;
+  border-radius: 1rem;
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  img {
+    width: 100%;
+  }
+  h1 {
+    color: $peach;
+  }
+  p {
+    font-style: italic;
+  }
+}

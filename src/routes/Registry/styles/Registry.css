@@ -18,7 +18,7 @@
   }
 }
 .rsvpContainer .rsvpHeader .icon {
-  fill: #ffd9bd;
+  fill: #FFD9BD;
   font-size: 2.5rem;
 }
 @media screen and (min-width: 700px) {
@@ -52,4 +52,4 @@
 }
 .rsvpContainer .shop img:hover {
   transform: scale(1.1);
-} /*# sourceMappingURL=Registry.css.map */
+}/*# sourceMappingURL=Registry.css.map */

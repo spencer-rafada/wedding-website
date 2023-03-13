@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './styles/RSVP.css';
 import { MdRsvp } from 'react-icons/md';
 import RSVPForm from './components/RSVPForm';
+import Success from './components/Success';
 import toast, { Toaster } from 'react-hot-toast';
 
 const getWindowSize = () => {
@@ -43,7 +44,7 @@ export default function RSVP() {
         <MdRsvp className="icon" />
         <h1>Help us plan for our wedding via RSVP!</h1>
       </div>
-      {submittedOk ? <h1>Hi</h1> : <RSVPForm handleSubmitOk={handleSubmitted} toasty={toast} />}
+      {submittedOk ? <Success /> : <RSVPForm handleSubmitOk={handleSubmitted} toasty={toast} />}
     </>
   );
 }
