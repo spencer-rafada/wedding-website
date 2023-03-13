@@ -13,6 +13,7 @@ import {
   RSVP,
   FAQ
 } from './routes/index';
+import 'process/browser';
 
 const router = createBrowserRouter([
   {

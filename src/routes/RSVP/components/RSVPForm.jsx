@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
-import { MdPersonAdd, MdPersonRemove} from 'react-icons/md';
+import { MdPersonAdd, MdPersonRemove } from 'react-icons/md';
+import axios from 'axios';
 
-export default function RSVPForm() {
+export default function RSVPForm({ handleSubmitOk }) {
   // firstName: { type: String, required: true },
   // lastName: { type: String, required: true },
   // rsvp: { type: Boolean, required: true },
@@ -17,7 +18,7 @@ export default function RSVPForm() {
   const [values, setValues] = useState({
     firstName: '',
     lastName: '',
-    rsvp: false,
+    rsvp: 'coming',
     note: '',
     address: '',
     city: '',
@@ -27,7 +28,7 @@ export default function RSVPForm() {
     phone: '',
     email: ''
   });
-  const [people, setPeople] = useState([{ person: '', rsvp: `coming` }]);
+  const [people, setPeople] = useState([{ person: '', otherRsvp: `coming` }]);
 
   const handleChange = (key) => {
     return ({ target: { value } }) => {
@@ -43,7 +44,7 @@ export default function RSVPForm() {
   };
 
   const addPerson = () => {
-    let newfield = { person: '', rsvp: 'coming' };
+    let newfield = { person: '', otherRsvp: 'coming' };
     setPeople([...people, newfield]);
   };
 
@@ -53,10 +54,19 @@ export default function RSVPForm() {
     setPeople(data);
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     let submitData = { ...values, people };
     console.log(submitData);
+    try {
+      const result = await axios.post('http://localhost:3030/rsvp', submitData);
+      if (result.status === 200) {
+        handleSubmitOk(true);
+        console.log(result);
+      }
+    } catch (error) {
+      handleSubmitOk(false, error.response.data.errors)
+    }
   };
 
   return (
@@ -195,7 +205,7 @@ export default function RSVPForm() {
                   </label>
                   <label>
                     RSVP:
-                    <select onChange={(event) => handlePersonChange(index, 'rsvp', event)}>
+                    <select onChange={(event) => handlePersonChange(index, 'otherRsvp', event)}>
                       <option value={`coming`}>Coming</option>
                       <option value={`unsure`}>Not Sure</option>
                       <option value={`not coming`}>Not Coming</option>
