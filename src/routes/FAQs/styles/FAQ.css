@@ -17,7 +17,7 @@
   }
 }
 .faqContainer .faqHeader .icon {
-  fill: #ffd9bd;
+  fill: #FFD9BD;
   font-size: 2rem;
 }
 @media screen and (min-width: 700px) {
@@ -41,7 +41,7 @@
   transition: 0.2s transform;
 }
 .faqContainer .faqSubmitQuestion a {
-  background-color: #ffd9bd;
+  background-color: #FFD9BD;
   border-radius: 2rem;
   margin: 0 auto;
   padding: 1rem;
@@ -57,7 +57,7 @@
   transform: scale(1.1);
 }
 .faqContainer .faqSubmitQuestion:hover a {
-  background-color: #e6e6fa;
+  background-color: #E6E6FA;
 }
 .faqContainer .faqGrid {
   display: block;
@@ -68,7 +68,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     -moz-column-gap: 1rem;
-    column-gap: 1rem;
+         column-gap: 1rem;
     row-gap: 1rem;
     width: 80%;
     margin: 0 auto;
@@ -84,4 +84,4 @@
   .faqContainer .faqGrid .faqQuestionCard {
     margin-bottom: 0;
   }
-} /*# sourceMappingURL=FAQ.css.map */
+}/*# sourceMappingURL=FAQ.css.map */
