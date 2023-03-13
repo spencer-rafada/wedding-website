@@ -59,7 +59,7 @@ export default function RSVPForm({ handleSubmitOk }) {
     let submitData = { ...values, people };
     console.log(submitData);
     try {
-      const result = await axios.post('http://localhost:3030/rsvp', submitData);
+      const result = await axios.post('https://hanaandspencer-backend.onrender.com/rsvp', submitData);
       if (result.status === 200) {
         handleSubmitOk(true);
         console.log(result);
