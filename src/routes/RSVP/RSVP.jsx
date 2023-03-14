@@ -30,7 +30,7 @@ export default function RSVP() {
       toast('We appreciate your help and we look forward to being in touch with you!');
     } else if (value === false) {
       toast.remove();
-      errors.forEach((item) => toast(item.msg))
+      errors.forEach((item) => toast(item.msg));
       toast('Please fill in all of the fields.');
     }
   };

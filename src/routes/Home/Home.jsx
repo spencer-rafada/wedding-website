@@ -1,20 +1,20 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import {Carousel} from 'react-responsive-carousel';
-import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from 'react-responsive-carousel';
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import mainImg1 from '../../assets/proposal.jpeg';
-import mainImg2 from '../../assets/Hana&Spencer_-01.jpg'
-import mainImg3 from '../../assets/Hana&Spencer_-02.jpg'
-import mainImg4 from '../../assets/Hana&Spencer_-03.jpg'
-import mainImg5 from '../../assets/Hana&Spencer_-04.jpg'
-import mainImg6 from '../../assets/Hana&Spencer_-05.jpg'
-import mainImg7 from '../../assets/Hana&Spencer_-06.jpg'
-import mainImg10 from '../../assets/Hana&Spencer_-09.jpg'
-import mainImg11 from '../../assets/Hana&Spencer_-10.jpg'
+import mainImg2 from '../../assets/Hana&Spencer_-01.jpg';
+import mainImg3 from '../../assets/Hana&Spencer_-02.jpg';
+import mainImg4 from '../../assets/Hana&Spencer_-03.jpg';
+import mainImg5 from '../../assets/Hana&Spencer_-04.jpg';
+import mainImg6 from '../../assets/Hana&Spencer_-05.jpg';
+import mainImg7 from '../../assets/Hana&Spencer_-06.jpg';
+import mainImg10 from '../../assets/Hana&Spencer_-09.jpg';
+import mainImg11 from '../../assets/Hana&Spencer_-10.jpg';
 import './styles/Home.css';
 
 export default function Home() {
-  const images = [mainImg1, mainImg10, mainImg11, mainImg2, mainImg7]
+  const images = [mainImg1, mainImg10, mainImg11, mainImg2, mainImg7];
 
   const calculateTimeLeft = () => {
     let timeLeft = {};
@@ -42,24 +42,32 @@ export default function Home() {
     <>
       <div className="mainHeroImg">
         <h1>We're getting married!!</h1>
-        <Carousel infiniteLoop={true} useKeyboardArrows={true} autoPlay={true} dynamicHeight={false} emulateTouch={true}>
+        <Carousel
+          infiniteLoop={true}
+          useKeyboardArrows={true}
+          autoPlay={true}
+          dynamicHeight={false}
+          emulateTouch={true}
+        >
           {/* these are the photos that are hiding the faces */}
-          <div className='mainImgCarousel'>
+          <div className="mainImgCarousel">
             <img src={mainImg6} alt={`Hana and Spencer`}></img>
           </div>
-          <div className='mainImgCarousel'>
+          <div className="mainImgCarousel">
             <img src={mainImg4} alt={`Hana and Spencer`}></img>
           </div>
-          <div className='mainImgCarousel'>
+          <div className="mainImgCarousel">
             <img src={mainImg5} alt={`Hana and Spencer`}></img>
           </div>
-          <div className='mainImgCarousel'>
+          <div className="mainImgCarousel">
             <img src={mainImg3} alt={`Hana and Spencer`}></img>
           </div>
           {images.map((item) => {
-            return <div>
-              <img src={item} alt={`Hana and Spencer`}></img>
-            </div>
+            return (
+              <div>
+                <img src={item} alt={`Hana and Spencer`}></img>
+              </div>
+            );
           })}
         </Carousel>
       </div>

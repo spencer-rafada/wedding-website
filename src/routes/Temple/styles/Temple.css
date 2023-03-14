@@ -23,7 +23,7 @@
   width: 100%;
   height: 30vh;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 @media screen and (min-width: 1024px) {
   .mainTemple img {
@@ -34,4 +34,4 @@
   .mainTemple p {
     font-size: 1.4rem;
   }
-}/*# sourceMappingURL=Temple.css.map */
+} /*# sourceMappingURL=Temple.css.map */

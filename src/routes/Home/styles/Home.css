@@ -2,16 +2,16 @@
   position: relative;
 }
 .mainHeroImg h1 {
-  font-family: "Parisienne", cursive;
+  font-family: 'Parisienne', cursive;
   position: absolute;
-  color: #FFD9BD;
+  color: #ffd9bd;
   top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
   font-size: 4rem;
   cursor: default;
-  text-shadow: #FFD9BD 0 0 10px;
+  text-shadow: #ffd9bd 0 0 10px;
   font-size: 1.8rem;
   z-index: 20;
 }
@@ -55,14 +55,14 @@
 }
 .mainHeroImg .mainImgCarousel img {
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   -o-object-position: 0px 20%;
-     object-position: 0px 20%;
+  object-position: 0px 20%;
 }
 .mainHeroImg img {
   width: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   height: 40vh;
 }
 @media screen and (min-width: 1024px) {
@@ -75,7 +75,7 @@
   text-align: center;
   margin-top: 3rem;
   margin-bottom: 3rem;
-  font-family: "Parisienne", cursive;
+  font-family: 'Parisienne', cursive;
 }
 .mainCouple h1 {
   font-weight: 700;
@@ -158,7 +158,7 @@
 .mainRSVPButton button {
   border: 0;
   padding: 1rem;
-  background-color: #FFD9BD;
+  background-color: #ffd9bd;
   border-radius: 2rem;
   transition: 0.3s transform;
 }
@@ -207,5 +207,5 @@
   width: 100%;
   height: 300px;
   -o-object-fit: cover;
-     object-fit: cover;
-}/*# sourceMappingURL=Home.css.map */
+  object-fit: cover;
+} /*# sourceMappingURL=Home.css.map */
