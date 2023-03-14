@@ -6,7 +6,7 @@
     font-family: 'Parisienne', cursive;
     position: absolute;
     color: $peach;
-    top: 50%;
+    top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -14,13 +14,50 @@
     cursor: default;
     text-shadow: $peach 0 0 10px;
     font-size: 1.8rem;
+    z-index: 20;
     @media screen and (min-width: 426px) {
       font-size: 2.8rem;
     }
     @media screen and (min-width: 1000px) {
       font-size: 3.5rem;
+      top: 30%;
     }
   }
+
+  // Carousel
+  .carousel-slider {
+    height: 100%;
+    .slider-wrapper {
+      height: 100%;
+    }
+  }
+
+  .thumbs-wrapper {
+    height: 200px;
+    @media screen and (min-width: 1024px) {
+      height: 300px;
+    }
+    .thumbs {
+      width: 100%;
+      .thumb {
+        width: 200px;
+        img {
+          height: 100%;
+        }
+      }
+    }
+  }
+
+  .mainImgCarousel {
+    overflow: hidden;
+    width: 100%;
+    img {
+      object-fit: cover;
+      object-position: 0px 20%;
+    }
+  }
+  // End of Carousel
+
   img {
     width: 100%;
     object-fit: cover;

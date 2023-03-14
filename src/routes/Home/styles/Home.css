@@ -5,7 +5,7 @@
   font-family: "Parisienne", cursive;
   position: absolute;
   color: #FFD9BD;
-  top: 50%;
+  top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -13,6 +13,7 @@
   cursor: default;
   text-shadow: #FFD9BD 0 0 10px;
   font-size: 1.8rem;
+  z-index: 20;
 }
 @media screen and (min-width: 426px) {
   .mainHeroImg h1 {
@@ -22,7 +23,41 @@
 @media screen and (min-width: 1000px) {
   .mainHeroImg h1 {
     font-size: 3.5rem;
+    top: 30%;
   }
+}
+.mainHeroImg .carousel-slider {
+  height: 100%;
+}
+.mainHeroImg .carousel-slider .slider-wrapper {
+  height: 100%;
+}
+.mainHeroImg .thumbs-wrapper {
+  height: 200px;
+}
+@media screen and (min-width: 1024px) {
+  .mainHeroImg .thumbs-wrapper {
+    height: 300px;
+  }
+}
+.mainHeroImg .thumbs-wrapper .thumbs {
+  width: 100%;
+}
+.mainHeroImg .thumbs-wrapper .thumbs .thumb {
+  width: 200px;
+}
+.mainHeroImg .thumbs-wrapper .thumbs .thumb img {
+  height: 100%;
+}
+.mainHeroImg .mainImgCarousel {
+  overflow: hidden;
+  width: 100%;
+}
+.mainHeroImg .mainImgCarousel img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 0px 20%;
+     object-position: 0px 20%;
 }
 .mainHeroImg img {
   width: 100%;
