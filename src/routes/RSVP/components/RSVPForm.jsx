@@ -29,6 +29,7 @@ export default function RSVPForm({ handleSubmitOk }) {
     email: ''
   });
   const [people, setPeople] = useState([{ person: '', otherRsvp: `coming` }]);
+  const [btnActive, setBtnActive] = useState(true)
 
   const handleChange = (key) => {
     return ({ target: { value } }) => {
@@ -56,8 +57,8 @@ export default function RSVPForm({ handleSubmitOk }) {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setBtnActive(false)
     let submitData = { ...values, people };
-    console.log(submitData);
     try {
       const result = await axios.post(
         'https://hanaandspencer-backend.onrender.com/rsvp',
@@ -65,10 +66,10 @@ export default function RSVPForm({ handleSubmitOk }) {
       );
       if (result.status === 200) {
         handleSubmitOk(true);
-        console.log(result);
       }
     } catch (error) {
       handleSubmitOk(false, error.response.data.errors);
+      setBtnActive(true)
     }
   };
 
@@ -236,7 +237,7 @@ export default function RSVPForm({ handleSubmitOk }) {
               ></textarea>
             </label>
           </fieldset>
-          <button type="submit" onClick={handleSubmit}>
+          <button type="submit" onClick={handleSubmit} disabled={!btnActive}>
             Submit
           </button>
         </form>
